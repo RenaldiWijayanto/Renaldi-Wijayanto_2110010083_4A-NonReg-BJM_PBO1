@@ -144,14 +144,15 @@ for (int i = 0; i < daftarSepatu.length; i++) {
 
 ```bash
 Scanner input = new Scanner(System.in);
+
 System.out.println("Data Sepatu  " + ( i + 1));
 System.out.print("Merk = ");
 String merk = input.next();
 
 System.out.println("\nDaftar Sepatu:");
 for (Sepatu sepatu : daftarSepatu) {
-sepatu.displayInfo();
-System.out.println();
+      sepatu.displayInfo();
+      System.out.println();
 ```
 
 13. **Array** adalah struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel. Pada kode ini, `Sepatu [] daftarSepatu = new Sepatu[2];` adalah contoh penggunaan array.
