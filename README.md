@@ -106,7 +106,7 @@ public class SepatuLari extends Sepatu {
 }
 ```
 
-9. **Polymorphism** adalah konsep di mana sebuah nama dapat digunakan untuk merujuk ke beberapa tipe atau bentuk objek berbeda. Ini memungkinkan metode-metode dengan nama yang sama untuk berperilaku berbeda tergantung pada tipe objek yang mereka manipulasi, polymorphism bisa berbentuk Overloading ataupun Overriding. Pada kode ini, method `displayInfo` di `Sepatu` merupakan overloading method `displayInfo` di `SepatuLari` merupakan override dari method `displayInfo` di `Sepatu`.
+9. **Polymorphism** adalah konsep di mana sebuah nama dapat digunakan untuk merujuk ke beberapa tipe atau bentuk objek berbeda. Ini memungkinkan metode-metode dengan nama yang sama untuk berperilaku berbeda tergantung pada tipe objek yang mereka manipulasi, polymorphism bisa berbentuk Overloading ataupun Overriding. Pada kode ini, method `displayInfo()` di `Sepatu` merupakan overloading method `displayInfo()` di `SepatuLari` merupakan override dari method `displayInfo()` di `Sepatu`.
 
 ```bash
 public void displayInfo() {
