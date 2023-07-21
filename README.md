@@ -164,30 +164,36 @@ Sepatu [] daftarSepatu = new Sepatu[2];
 
 ```bash
 try {
-      ...{
-      throw new IllegalArgumentException("Ukuran sepatu harus lebih dari o. ");
+        System.out.print("Ukuran  = ");
+        ukuran = input.nextInt();
+        if  (ukuran <= 10 ) {
+             throw new IllegalArgumentException("Ukuran sepatu harus lebih dari o. ");
+        }
+        ukuranValid = true;
+     } catch (InputMismatchException e) {
+        System.out.println("Masukkan ukuran sepatu dalam bentuk angka. ");
+        input.nextLine();
+     } catch (IllegalArgumentException e) {
+        System.out.println(e.getMessage());
+         input.nextLine();
      }
- ...
-}     catch (InputMismatchException e) {
-      System.out.println("Masukkan ukuran sepatu dalam bentuk angka. ");
-}     catch (IllegalArgumentException e) {
-      System.out.println(e.getMessage());
-      input.nextLine();
-}
 
 try {
-       ...{
-        throw new IllegalArgumentException("Harga sepatu harus lebih dari 50000.");
-}
-  ...               
-}    catch (InputMismatchException e) {
-     System.out.println("Masukkan harga sepatu dalam bentuk angka.");
-     input.nextLine();
-}    catch (IllegalArgumentException e) {
-     System.out.println(e.getMessage());
-     input.nextLine();
-}
-```
+        System.out.print("Harga  = ");
+        harga = input.nextDouble();
+        if (harga  <= 0) {
+            throw new IllegalArgumentException("Harga sepatu harus lebih dari 50000.");
+        }
+        hargaValid = true;
+                    
+      } catch (InputMismatchException e) {
+        System.out.println("Masukkan harga sepatu dalam bentuk angka.");
+        input.nextLine();
+      } catch (IllegalArgumentException e) {
+        System.out.println(e.getMessage());
+        input.nextLine();
+      }
+
 
 ## Usulan nilai
 
