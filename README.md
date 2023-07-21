@@ -220,3 +220,4 @@ try {
 
 Nama  : Renaldi Wijayanto
 NPM   : 2110010083
+Kelas : 4A NonReg BJM
